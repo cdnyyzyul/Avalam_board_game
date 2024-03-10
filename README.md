@@ -2,7 +2,20 @@
 
 Avalam is a two-player game with win, null and loss conditions- a zero-sum game. Like most adversarial agents, we need to understand key aspects of the game to build an agent:
 - Initial state - The initial state of the board has opposing color pawns arranged diagonally. 
-![alt text](http:images/next.png)
+
+```
+
+ .  . +1 -1  .  .  .  .  .
+ . +1 -1 +1 -1  .  .  .  .
+ . -1 +1 -1 +1 -1 +1  .  .
+ . +1 -1 +1 -1 +1 -1 +1 -1
++1 -1 +1 -1  . -1 +1 -1 +1
+-1 +1 -1 +1 -1 +1 -1 +1  .
+ .  . +1 -1 +1 -1 +1 -1  .
+ .  .  .  . -1 +1 -1 +1  .
+ .  .  .  .  . -1 +1  .  .
+
+```
 - Viable actions - Pawns can be stacked on to adjacent pawns but it is illegal to stack more than 5 pawns.
 - Every Avalam player can move his/her opponent’s pawns.
 - Terminal state - The game ends when no legal moves are allowed.
